@@ -1,0 +1,20 @@
+	if(codest0[0] == 'v')	 {
+		if(codest0[1] == 'o') {
+			if(codest0[2] == 'i') {
+				if(codest0[3] == 'c') {
+					if(codest0[4] == 'e') {
+	
+							string voicee;
+							for(int x = 5;x<1024;x++) {
+								if(codest0[x] == ';') {
+									break;
+								}
+								voicee += codest0[x]; 
+							}
+							out << "cout << " << voicee << ";" << '\n';
+							
+					}
+				}
+			}
+		}
+	}
