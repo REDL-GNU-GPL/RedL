@@ -1,0 +1,85 @@
+
+
+	if(codest0[0] == 'c')	 {
+		if(codest0[1] == 'o') {
+			if(codest0[2] == 'm') {
+				if(codest0[3] == '_') {
+					if(codest0[4] == 'i') {
+						if(codest0[5] == 'n') {
+							if(codest0[6] == 't') {
+					
+								string integer;
+								string string;
+								
+								int x = 7;
+								for(;x<1024;x++) {
+									if(codest0[x] == ',') {
+										break;
+									}
+									string += codest0[x]; 
+								}
+								x+=1;
+								for(;x<1024;x++) {
+									if(codest0[x] == ';') {
+										break;
+									}
+									integer += codest0[x]; 
+								}
+								
+								
+								out << "stringstream stream(" << string << ");" << '\n';
+								out << "stream >> " << integer << ";" << '\n'; 
+
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+
+
+
+	if(codest0[0] == 'c')	 {
+		if(codest0[1] == 'o') {
+			if(codest0[2] == 'm') {
+				if(codest0[3] == '_') {
+					if(codest0[4] == 's') {
+						if(codest0[5] == 't') {
+							if(codest0[6] == 'r') {
+							
+								string integer;
+								string string;
+								
+								int x = 7;
+								for(;x<1024;x++) {
+									if(codest0[x] == ',') {
+										break;
+									}
+									integer += codest0[x]; 
+								}
+								x+=1;
+								for(;x<1024;x++) {
+									if(codest0[x] == ';') {
+										break;
+									}
+									string += codest0[x]; 
+								}
+								
+								out << "std::stringstream REDLINTSTR;" << '\n';
+								out << "REDLINTSTR << " << integer << ";" << '\n';
+								out << string << " = REDLINTSTR.str();" << '\n';
+								
+								
+							
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
