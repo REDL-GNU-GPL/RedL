@@ -1,0 +1,28 @@
+
+	if(codest0[0] == 'i') {
+		if(codest0[1] == 'm') {
+			if(codest0[2] == 'p') {
+				if(codest0[3] == 'o') {
+					if(codest0[4] == 'r') {
+						if(codest0[5] == 't') {
+						
+							string imp;
+							for(int x = 6;x<1024;x++) {
+									if(codest0[x] == ';') {
+										break;
+									}
+									imp += codest0[x]; 
+								}
+							out << "#include " << imp << '\n';
+							
+							
+						
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	
