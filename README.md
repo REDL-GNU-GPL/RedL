@@ -8,7 +8,8 @@ license GNU GPL v3
 
 
 Purpose: Facilitate and speed up work with C ++ keeping its capabilities and speed
-
+The current scope of development: Software (GUI)
+Feature: Ease of use and speed
 
 
 ! All documentation is inside the install.tar.gz !
