@@ -2,8 +2,11 @@
 Red Language, C-like Programming language
 
 Version: 0.02 BETA
+
 Platform(OS): Linux(Debian and his like)
+
 Written in c++
+
 license GNU GPL v3
 
 
