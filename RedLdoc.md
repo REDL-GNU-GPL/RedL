@@ -1,12 +1,12 @@
 
 //-----------------------------------------------------------------------------|
 //                                                                             |
-//	When storing or launching redl you accept the license agreement GNU GPL    |
-//	GNU GENERAL PUBLIC LICENSE v3.0                                            |
+//	When storing or launching redl you accept the license agreement GNU GPL|
+//	GNU GENERAL PUBLIC LICENSE v3.0                                        |
 //                                                                             |
 //-----------------------------------------------------------------------------|
 
-
+!! GUI doc, only for linux !!
 
 
 						Сompilation instruction
