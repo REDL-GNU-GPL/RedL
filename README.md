@@ -1,7 +1,7 @@
 # RedL
 Red Language, C-like Programming language
 
-Version: 0.02 BETA
+Last version: 0.02 BETA
 
 Platform(OS): Linux(Debian and his like)
 
