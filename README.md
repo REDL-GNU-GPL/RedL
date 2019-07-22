@@ -3,7 +3,7 @@ Red Language, C-like Programming language
 
 Last version: 0.02 BETA
 
-Platform(OS): Linux(Debian and his like)
+Platform(OS): Debian and his like, Win7,8,8.1,10 x64
 
 Written in c++
 
