@@ -24,7 +24,6 @@ std::string trim(const std::string & s){
 
 
 bool converter = false;
-bool exet = false;
 
 int main(int argc, char **argv) {
 
@@ -44,7 +43,6 @@ int main(int argc, char **argv) {
 			cout << "--------------------------------------------------|" << endl;
 			cout << "| redl -v   -->>  version redl                    |" << endl;
 			cout << "| redl test.rlf   -->> compile file .rlf          |" << endl;
-			cout << "| redl test.rlf -exe -->> compile file .rlf in exe|" << endl;
 			cout << "| redl -convert test.rlf  -->> convert rlf in cpp |" << endl;
 			cout << "--------------------------------------------------|" << endl;
 			cout << endl;
@@ -70,10 +68,6 @@ int main(int argc, char **argv) {
 				a = argv[2];
 				converter = true;
 		}
-	}
-	string exe = "-exe";
-	if(argv[2] == exe) {
-		exet = true;
 	}
 	
 	#include "bin/code.cpp"
@@ -153,28 +147,16 @@ int main(int argc, char **argv) {
 
 		
 		if((codest00.find(GUI, 0) + 1)) {
-			system("cp /var/redl/file.c pwd");
 			system("gcc file.c `pkg-config --cflags --libs gtk+-3.0`");
 			system("rm file.c");
 			system("rm file.cpp");
-			system("rm pwd");
 		}else {
 			if(converter == true) {
-				system("cp /var/redl/file.cpp pwd");
 				system("rm file.c");	
-				system("rm pwd");
-			}else if(exet == true) {
-				system("cp /var/redl/file.cpp pwd");
-				system("g++ -Wall -o file.exe file.cpp");
-				system("rm file.cpp");
-				system("rm file.c");
-				system("rm pwd");
 			}else {
-				system("cp /var/redl/file.cpp pwd");
 				system("g++ -Wall -o file file.cpp");
 				system("rm file.cpp");
 				system("rm file.c");
-				system("rm pwd");
 			}
 		}
 		
