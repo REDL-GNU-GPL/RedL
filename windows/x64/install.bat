@@ -1,5 +1,5 @@
 @echo off
-move redl "C:\Users\%UserName%\AppData\Roaming\" 
+move redl C:\Users\%UserName%\AppData\Roaming\
 
 set Key=HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment
 set FolderToAdd=C:\Users\%UserName%\AppData\Roaming\redl\
