@@ -43,7 +43,6 @@ int main(int argc, char **argv) {
 			cout << "--------------------------------------------------|" << endl;
 			cout << "| redl -v   -->>  version redl                    |" << endl;
 			cout << "| redl test.rlf   -->> compile file .rlf          |" << endl;
-			cout << "| redl test.rlf -exe -->> compile file .rlf in exe|" << endl;
 			cout << "| redl -convert test.rlf  -->> convert rlf in cpp |" << endl;
 			cout << "--------------------------------------------------|" << endl;
 			cout << endl;
