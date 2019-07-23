@@ -113,7 +113,7 @@ AND SO ON
 
 
 //-------------------------------------------------------|
-//							Data types                   |
+//			Data types                       |
 //-------------------------------------------------------|						
 							
 					
@@ -145,7 +145,7 @@ BOOLEAN
 	
 ARRAY
 
-	array x[3][25] = {{"Hello"}, {" world"}};
+	array x[3][25] = {"Hello", " world"};
 	
 	//	3 - number of lines
 	//  25 - string length (symbolically)
