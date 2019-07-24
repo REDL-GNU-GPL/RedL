@@ -53,7 +53,7 @@ int main(int argc, char **argv) {
 	if(argv[1] == version) {
 		cout << "--------------------------------" << endl;
 		cout << "|                              |" << endl;
-		cout << "|   RedL 0.02 BETA for LINUX   |" << endl;
+		cout << "|   RedL 0.02 BETA for WINDOWS |" << endl;
 		cout << "|                              |" << endl;
 		cout << "--------------------------------" << endl;
 		cout << endl;
