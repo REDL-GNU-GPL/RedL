@@ -1,0 +1,17 @@
+if(codest0[0] == 'l')	 {      					
+	if(codest0[1] == 'i') {     					
+		if(codest0[2] == 'b') {						
+			if(codest0[3] == 's') {					
+												
+					for(int x = 4;x<1024;x++) {			
+						if(codest0[x] == ';') {			
+							break;						
+						}								
+						libs += codest0[x]; 			
+					}									
+
+	
+				}		
+			}			
+		}				
+	}					

@@ -1,0 +1,31 @@
+	if(codest0[0] == 'u')	 {
+		if(codest0[1] == 's') {
+			if(codest0[2] == 'e') {
+				
+										string uses;
+										string argfun2;
+										int x = 3;
+										for(;x<1024;x++) {
+											if(codest0[x] == '>') {
+												break;
+											}
+											uses += codest0[x]; 
+										}
+										x+=1;
+										for(;x<1024;x++) {
+											if(codest0[x] == ';') {
+												break;
+											}
+											argfun2 += codest0[x]; 
+										}
+										
+	
+										if((argfun2.find("null", 0) + 1)) {
+											out << uses << "();" << '\n';
+										}else {
+											out << uses << "(" << argfun2 << ");" << '\n';
+										}
+			
+			}
+		}
+	}

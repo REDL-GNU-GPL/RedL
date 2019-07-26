@@ -1,0 +1,25 @@
+		if(codest0[0] == 'r') {
+			if(codest0[1] == 'e') {
+				if(codest0[2] == 't') {
+					if(codest0[3] == 'u') {
+						if(codest0[4] == 'r') {
+							if(codest0[5] == 'n') {
+
+
+								string returned;
+								for(int x = 6;x<1024;x++) {
+									if(codest0[x] == ';') {
+										break;
+									}
+									returned += codest0[x]; 
+								}
+								out << "return " << returned << ";" << '\n';
+
+
+
+							}
+						}
+					}
+				}
+			}
+		}

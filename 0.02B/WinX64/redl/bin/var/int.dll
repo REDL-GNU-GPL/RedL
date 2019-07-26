@@ -1,0 +1,30 @@
+	if(codest0[0] == 'i') {
+		if(codest0[1] == 'n') {
+			if(codest0[2] == 't') {
+	
+	
+								string integer;
+								for(int x = 3;x<1024;x++) {
+									if(codest0[x] == ';') {
+										break;
+									}
+									integer += codest0[x]; 
+								}
+								out << "long long " << integer << ";" << '\n';
+
+			}
+		}
+	}
+	
+	if(codest0[0] == '*') {
+		
+		string cppl;
+		for(int x = 1;x<1024;x++) {
+			if(codest0[x] == ';') {
+				break;
+			}
+			cppl += codest0[x]; 
+		}
+		out << cppl << ";" << '\n';
+		
+	}
