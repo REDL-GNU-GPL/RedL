@@ -16,7 +16,7 @@ license GNU GPL v3
 
 Purpose: Facilitate and speed upwork with C ++ keeping its capabilities and speed
 
-The current scope of development: Software (GUI)
+The current scope of development: Software
 
 Feature: Ease of use and speed
 
