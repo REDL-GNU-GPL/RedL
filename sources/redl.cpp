@@ -1,3 +1,9 @@
+//-----------------------------------|
+//                                   |
+// ITS FILE FOR WINDOWS              |
+//                                   |
+//-----------------------------------|
+
 #include <iostream>
 #include <string>
 #include <fstream>
