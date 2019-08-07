@@ -166,11 +166,11 @@ if(timeint == 0) {
 							}
 							
 							if(exec1 == false) {
-								cout << "ERROR syntax not executed in `for`" << endl;
+								cout << "ERROR syntax not executed in `else if`" << endl;
 								return 0;
 							}
 							if(exec2 == false) {
-								cout << "ERROR syntax not executed in `row`" << endl;
+								cout << "ERROR syntax not executed in `else if`" << endl;
 								return 0;
 							}
 							
@@ -218,22 +218,22 @@ if(timeint == 0) {
 							bool exec1 = false;
 							bool exec2 = false;
 							bool exec3 = false;
-							string ifs1;
-							string ifs2;
+							string GLOBAL;
+							string text;
 							int y = x+5;
-							for(;y<300;y++) {
+							for(;y<line;y++) {
 								if(newer[y] == '(') {
 									exec1 = true;
 									break;
 								}
 							}
 							y+=1;
-							for(;y<300;y++) {
+							for(;y<line;y++) {
 								if(newer[y] == '>') {
 									exec2 = true;
 									break;
-								}		 
-								ifs1 += newer[y];
+								}
+								text += newer[y];
 								x++;
 							}
 							y+=1;
@@ -247,17 +247,17 @@ if(timeint == 0) {
 								if (newer[y] == '\"')
 								    test = !test;
 								
-								    if (!test) {
-								        if (newer.compare(y, scobe.length(), scobe) == 0) {
-								            exec3 = true;
-								            break;
-								        }
+								if (!test) {
+								    if (newer.compare(y, scobe.length(), scobe) == 0) {
+								        exec3 = true;
+								        break;
 								    }
+								}
 													 
-								ifs2 += newer[y];
+								GLOBAL += newer[y];
 								x++;
 							}
-								    
+							
 							if(exec1 == false) {
 								cout << "ERROR syntax not executed in `if.in`" << endl;
 								return 0;
@@ -273,7 +273,7 @@ if(timeint == 0) {
 								    
 							
 							
-							out << "if((" << ifs2 << ".find(" << ifs1 << ", 0) + 1)" << '\n'; 
+							out << "if((" << GLOBAL << ".find(" << text << ", 0) + 1)" << '\n'; 
 					
 					}
 				}

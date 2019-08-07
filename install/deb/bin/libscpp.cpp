@@ -49,7 +49,8 @@ if(timeint == 0) {
 		if(newer[x+1] == 'x') {     					
 			if(newer[x+2] == 'i') {						
 				if(newer[x+3] == 't') {	
-	
+		
+					out << "system(\"pause\");" << '\n';
 					out << "return 0;" << '\n';	
 			
 				}		
