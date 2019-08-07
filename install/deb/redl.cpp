@@ -15,6 +15,13 @@ using namespace std;
 
 string libs;
 
+std::string trim(const std::string & s){
+    size_t startPos = s.find_first_not_of(" \t");
+    if ( startPos == std::string::npos )
+        return "";
+    size_t endPos = s.find_last_not_of(" \t");
+    return s.substr(startPos, endPos - startPos + 1);
+}
 
 int main(int argc, char **argv) {
 
@@ -61,8 +68,7 @@ int main(int argc, char **argv) {
 		string newer;
 		for (int voice2 = 0;voice2 < strokeINT; voice2++) {
 			string codest = code[voice2];
-
-
+			trim(codest);
 			int maxsimbhol = strokeINT * 300;
 			#include "bin/treat.cpp"
 		}
@@ -73,8 +79,10 @@ int main(int argc, char **argv) {
 		}
 		
 		
+		
 		long long line = newer.length();
 		
+		cout << newer << endl;
 		
 		#include "bin/scobe.cpp"
 		
@@ -114,7 +122,7 @@ int main(int argc, char **argv) {
 		
 
 			system("g++ file.cpp -static-libgcc -std=c++11");
-			system("rm file.cpp");
+			system("del file.cpp");
 		
 		
 			
