@@ -1,0 +1,11 @@
+1.go in dir with install.sh
+2.write 'sudo chmod ugo+x install.sh'
+
+	OR
+
+write 'sudo chmod +x install.sh'
+
+3.write './install.sh'
+4.reboot system
+
+5.ALL COMPLEATE , GO WRITE CODE IN REDL !!!
