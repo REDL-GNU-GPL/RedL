@@ -1,5 +1,4 @@
-if(timeint == 0) {			
-			
+if(timeint == 0) {
 				if(newer[x] == 'i') {
 					if(newer[x+1] == 'f') {
 						if(newer[x+2] != '.') {
@@ -8,7 +7,7 @@ if(timeint == 0) {
 							bool exec2 = false;
 							string GLOBAL;
 							int y = x+2;
-							for(;y<300;y++) {
+							for(;y<line;y++) {
 								if(newer[y] == '(') {
 									exec1 = true;
 									break;
@@ -25,17 +24,17 @@ if(timeint == 0) {
 								if (newer[y] == '\"')
 								    test = !test;
 								
-								    if (!test) {
-								        if (newer.compare(y, scobe.length(), scobe) == 0) {
-								            exec2 = true;
-								            break;
-								        }
+								if (!test) {
+								    if (newer.compare(y, scobe.length(), scobe) == 0) {
+								        exec2 = true;
+								        break;
 								    }
+								}
 													 
 								GLOBAL += newer[y];
 								x++;
 							}
-								    
+							
 							if(exec1 == false) {
 								cout << "ERROR syntax not executed in `if`" << endl;
 								return 0;
@@ -44,30 +43,18 @@ if(timeint == 0) {
 								cout << "ERROR syntax not executed in `if`" << endl;
 								return 0;
 							}
-								    
 							
 							
-							
-							
-							
-							
+						
 							#include "../../GLOBAL_COMMAND_LIBS/GLOBAL.cpp"
 							
 							
-							
-							
-							
-							
-							
-							
-								    
-								    
 							out << "if(" << GLOBAL << '\n';
 						}
 					}
 				}
 				
-}
+	}
 
 
 if(timeint == 0) {
@@ -78,11 +65,11 @@ if(timeint == 0) {
 					if(newer[x+4] == 'i') {
 						if(newer[x+5] == 'f') {
 							
-							bool exec1 = false;
+								bool exec1 = false;
 							bool exec2 = false;
 							string GLOBAL;
 							int y = x+6;
-							for(;y<300;y++) {
+							for(;y<line;y++) {
 								if(newer[y] == '(') {
 									exec1 = true;
 									break;
@@ -99,17 +86,17 @@ if(timeint == 0) {
 								if (newer[y] == '\"')
 								    test = !test;
 								
-								    if (!test) {
-								        if (newer.compare(y, scobe.length(), scobe) == 0) {
-								            exec2 = true;
-								            break;
-								        }
+								if (!test) {
+								    if (newer.compare(y, scobe.length(), scobe) == 0) {
+								        exec2 = true;
+								        break;
 								    }
+								}
 													 
 								GLOBAL += newer[y];
 								x++;
 							}
-								    
+							
 							if(exec1 == false) {
 								cout << "ERROR syntax not executed in `elseif`" << endl;
 								return 0;
@@ -118,13 +105,12 @@ if(timeint == 0) {
 								cout << "ERROR syntax not executed in `elseif`" << endl;
 								return 0;
 							}
-								    
-								    
-								    
-							#include "../../GLOBAL_COMMAND_LIBS/GLOBAL.cpp"	    
-								    
-								    
-								    
+							
+							
+						
+							#include "../../GLOBAL_COMMAND_LIBS/GLOBAL.cpp"
+							
+							
 							out << "else if(" << GLOBAL << '\n';
 	
 							
@@ -151,7 +137,7 @@ if(timeint == 0) {
 							bool exec2 = false;
 							string GLOBAL;
 							int y = x+7;
-							for(;y<300;y++) {
+							for(;y<line;y++) {
 								if(newer[y] == '(') {
 									exec1 = true;
 									break;
@@ -168,31 +154,31 @@ if(timeint == 0) {
 								if (newer[y] == '\"')
 								    test = !test;
 								
-								    if (!test) {
-								        if (newer.compare(y, scobe.length(), scobe) == 0) {
-								            exec2 = true;
-								            break;
-								        }
+								if (!test) {
+								    if (newer.compare(y, scobe.length(), scobe) == 0) {
+								        exec2 = true;
+								        break;
 								    }
+								}
 													 
 								GLOBAL += newer[y];
 								x++;
 							}
-								    
+							
 							if(exec1 == false) {
-								cout << "ERROR syntax not executed in `else if`" << endl;
+								cout << "ERROR syntax not executed in `for`" << endl;
 								return 0;
 							}
 							if(exec2 == false) {
-								cout << "ERROR syntax not executed in `else if`" << endl;
+								cout << "ERROR syntax not executed in `row`" << endl;
 								return 0;
 							}
-								    
-								    
-								 
-							#include "../../GLOBAL_COMMAND_LIBS/GLOBAL.cpp"	 
-								 
-								    
+							
+							
+						
+							#include "../../GLOBAL_COMMAND_LIBS/GLOBAL.cpp"
+							
+							
 							out << "else if(" << GLOBAL << '\n';
 						
 							

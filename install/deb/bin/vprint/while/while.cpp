@@ -5,7 +5,7 @@
 						if(newer[x+2] == 'i') {
 							if(newer[x+3] == 'l') {
 								if(newer[x+4] == 'e') {
-					
+									bool doe = false;
 									bool exec1 = false;
 									bool exec2 = false;
 									string GLOBAL;
@@ -18,6 +18,7 @@
 									}
 									y+=1;
 									string scobe = "{";
+									string scobe2 = ");";
 									bool test = false;
 									for(;y<line;y++) {
 										if (newer[y] == '\\')
@@ -30,6 +31,11 @@
 										if (!test) {
 										    if (newer.compare(y, scobe.length(), scobe) == 0) {
 										        exec2 = true;
+										        break;
+										    }
+										    if (newer.compare(y, scobe2.length(), scobe2) == 0) {
+										        exec2 = true;
+										        doe = true;
 										        break;
 										    }
 										}
@@ -50,10 +56,12 @@
 							    
 								    
 									#include "../../GLOBAL_COMMAND_LIBS/GLOBAL.cpp"
-										    
-										    
-									out << "while(" << GLOBAL << '\n';
-						
+									
+									if(doe == true) {
+										out << "while(" << GLOBAL << ")" << '\n';
+									}else {
+										out << "while(" << GLOBAL << '\n';
+									}
 							
 								}
 							}
