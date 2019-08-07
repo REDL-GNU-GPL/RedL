@@ -122,7 +122,7 @@ int main(int argc, char **argv) {
 		
 
 			system("g++ file.cpp -static-libgcc -std=c++11");
-			system("del file.cpp");
+			system("rm file.cpp");
 		
 		
 			
