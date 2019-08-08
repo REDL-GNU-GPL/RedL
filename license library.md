@@ -1,6 +1,6 @@
                                              <LAL>
 					LIBRARY ADDITION LICENSE
-	                                        @2019
+	                                         @2019
 						
  When sending your library to mail - dmitrykeof@gmail.com
  you should write - I agree that my library <NAME YOUR LIB> is subject to the GNU GENERAL PUBLIC LICENSE v3.0 license
