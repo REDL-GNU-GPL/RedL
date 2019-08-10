@@ -98,34 +98,48 @@ RedL programming language
 
 
 /////////////////////////////////////////////
+
 //                                         //
+
 //       Official RedL documentation       //
+
 //   Official site - http://red-lang.ru/   //
+
 //                                         //
+
 /////////////////////////////////////////////
 
 https://github.com/REDL-GNU-GPL/RedL/blob/master/license.md
+
 https://www.gnu.org/licenses/gpl-3.0
 
 
                     
 					
-	//-------------------------------------------------------------//				
-	//					Library Creation                           //
+	//-------------------------------------------------------------//	
+  
+	//					Library Creation                                   //
+  
 	//-------------------------------------------------------------//	
 
 
 Attention, before reading further read the license - LIBRARY ADDITION LICENSE <LAL>
+  
 https://github.com/REDL-GNU-GPL/RedL/blob/master/license%20library.md
 
 
 The creation of libraries takes place in the catalog - redl/libs/
+
 Also, if you need to connect the C ++ library, go to the libsadd.cpp in the catalog - redl/libs/
+
 
 Example:
 
+
 if((libs.find("nameyourlib", 0) + 1)) {
+
 	out << "#include <iostream>" << '\n';
+  
 }
 
 Recommendation: take the code (its excerpts from) the library - vprint
@@ -139,7 +153,6 @@ if((libs.find("nameyourlib", 0) + 1)) {
 Library Code Example:
 
 	if((libs.find("temp", 0) + 1)) {
-
 		if(timeint == 0) {
 			if (newer[x] == 't') {
 				if (newer[x+1] == 'e') {
@@ -160,7 +173,9 @@ now in the main file - redl/redl.cpp write in the loop for on the line - 106 #in
 Now if we write the following code:
 
 	Code redl:
+  
 		libs vprint;
+    
 		libs temp; /* its this is the library we just created, by the way this is a safe comment */
 
 		main {
@@ -183,6 +198,7 @@ And we get: Hello, world!
 			GLOBAL COMMAND
 
 A global command is a command that works inside others
+
 for example: len (length)
 
 	libs vprint;
@@ -197,7 +213,9 @@ for example: len (length)
 			
 			
 The directory with global commands is located in: redl/bin/GLOBAL_COMMAND_LIBS/
+
 If you want global command in your (regular) command, then write - 	#include "GLOBAL_COMMAND_LIBS/GLOBAL.cpp"
+
 
 Command example:
 
@@ -205,6 +223,7 @@ Command example:
 
 
 ----------------------------------------------------------------------------------------------------------------------
+
 	if(timeint == 0) {
 				if(newer[x] == 'v') {
 					if(newer[x+1] == 'o') {
@@ -249,6 +268,7 @@ Command example:
 					}
 				}	
 		}
+    
 ----------------------------------------------------------------------------------------------------------------------
 
 
@@ -257,27 +277,42 @@ Command example:
 
 
 	//-------------------------------------------------------------//				
-	//					        RedL                               //
+	//					        RedL                                       //
 	//-------------------------------------------------------------//	
 
 
 In the programming language redl there are libraries at the time
+
 of the creation of this documentation there are only two of them - vprint,math
 
 More on vprint:
+
 	Functions:
+  
 		1.Information output and input
+    
 		2.Data Types and Their Operations
+    
 			1.byte 
+      
 			2.byty 
+      
 			3.row 
+      
 			4.float
+      
 			5.dual
+      
 			6.array
+      
 			7.bool
+      
 		3.Checks - if, else, else if, if.in ...
+    
 		4.Relay(switch), case, default
+    
 		5.Cycles - while, for, do while ...
+    
 		6.String and array's functions
 		
 
@@ -314,16 +349,24 @@ Code Template:
 2.Data Types and Their Operations
 
 	Data Types(VAR): 
+  
 		byte - Integers can be stored from −2.147.483.648 to 2.147.483.647
+    
 		byty - Integers can be stored two times more than byte
+    
 	    float - Floating point number
+      
 		dual - Floating point number ,but twice as much as the float
+    
 		row - text "hello world!";
+    
 		bool - true/false or 1/0
+    
 		array - array maximum value 800 to 500 ([800][500])
 		
 	
 	Their Operations(VAR):
+  
 		To change a variable, you can enter the following:
 			
 			replay(nameVAR,5 + 5);
@@ -331,14 +374,19 @@ Code Template:
 		increment decrement:
 		
 			incpost(nameVAR); /* nameVAR++ */ only for num
+      
 			incpref(nameVAR); /* ++nameVAR */ only for num
 			
 			decpost(nameVAR); /* nameVAR-- */ only for num
+      
 			decpref(nameVAR); /* --nameVAR */ only for num
 	
 	CPP LINE:
+  
 		`x++;
+    
 		`cout << "hello world!" << endl;
+    
 		...
 	
 	
@@ -362,6 +410,7 @@ Code Template:
 	
 
 5.If, else, else if, if.in 
+
 	test example (in main):
 		
 		row x = "hello";
