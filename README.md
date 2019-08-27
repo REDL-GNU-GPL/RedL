@@ -1,5 +1,18 @@
 # RedL
 # http://www.red-lang.ru/
+
+
+# Editing the GNU GPL N1 @ 2019 license
+
+Editing implies that when placing a project / product
+with the code of the RedL and its library, you must indicate
+the REDL in the name of the project / product.
+
+# @Valid for project redl and similar products.
+
+
+---------------------------------------------------------
+
 RedL programming language 
 
 Last version: 0.05B
