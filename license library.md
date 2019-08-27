@@ -29,5 +29,6 @@
 	
 	
                  The license <LAL> belongs to the RedL project
-  The license <LAL> made in @2019 Dmitry Terakov for project RedL and him library
+   The license <LAL> made in @2019 Dmitry Terakov for project RedL and him library
+	
 ____________________________________________________________________________________
